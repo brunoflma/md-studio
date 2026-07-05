@@ -1,0 +1,12 @@
+{
+  "name": "md-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visualizador e editor de Markdown em arquivo HTML unico.",
+  "scripts": {
+    "screenshots": "node scripts/capture-readme-screenshots.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}

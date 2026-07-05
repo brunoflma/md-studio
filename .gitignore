@@ -1,0 +1,9 @@
+# Arquivos locais de agentes e memoria de conversa. Nao publicar.
+.conversation-esaa/
+.claude/
+.grok/
+node_modules/
+
+# Artefatos comuns de sistema/editor.
+.DS_Store
+Thumbs.db
