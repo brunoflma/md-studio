@@ -3,10 +3,11 @@ const path = require('path');
 const { chromium } = require('playwright');
 
 async function main() {
-  const root = path.resolve(__dirname, '..');
-  const htmlPath = path.join(root, 'md-studio.html');
-  const markdownPath = path.join(root, 'examples', 'apollo-11.md');
-  const screenshotDir = path.join(root, 'screenshots');
+  const appRoot = path.resolve(__dirname, '..');
+  const projectRoot = path.resolve(appRoot, '..');
+  const htmlPath = path.join(projectRoot, 'md-studio.html');
+  const markdownPath = path.join(appRoot, 'examples', 'apollo-11.md');
+  const screenshotDir = path.join(appRoot, 'screenshots');
   const markdown = fs.readFileSync(markdownPath, 'utf8');
   const url = `file:///${htmlPath.replace(/\\/g, '/').replace(/ /g, '%20')}`;
 

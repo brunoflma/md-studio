@@ -2,7 +2,7 @@
 
 MD Studio é um visualizador e editor de Markdown em arquivo HTML único. Ele foi feito para abrir documentos `.md` no navegador com uma leitura mais agradável, mantendo também modos de edição inline e edição do código-fonte Markdown.
 
-![Visualização de um Markdown no MD Studio](screenshots/preview.png)
+![Visualização de um Markdown no MD Studio](.app/screenshots/preview.png)
 
 ## Como usar
 
@@ -35,11 +35,11 @@ Também é possível arrastar um arquivo Markdown para a tela inicial, usar o bo
 
 O botão de edição abre o documento em modo visual, permitindo alterar o conteúdo renderizado. O botão de código-fonte alterna para um editor de texto com o Markdown original.
 
-![Edição de Markdown no MD Studio](screenshots/editor.png)
+![Edição de Markdown no MD Studio](.app/screenshots/editor.png)
 
 ## Exemplo seguro para demonstração
 
-O arquivo `examples/apollo-11.md` contém um Markdown genérico sobre a missão Apollo 11. Ele foi criado para gerar os screenshots deste README sem expor dados pessoais, documentos internos ou informações sensíveis.
+O arquivo `.app/examples/apollo-11.md` contém um Markdown genérico sobre a missão Apollo 11. Ele foi criado para gerar os screenshots deste README sem expor dados pessoais, documentos internos ou informações sensíveis.
 
 ## Dependências
 
@@ -57,18 +57,19 @@ Por isso, a experiência completa depende de acesso à internet, a menos que ess
 
 ## Regenerar screenshots
 
-Os screenshots do README foram gerados com Playwright a partir do Markdown genérico em `examples/apollo-11.md`.
+Os screenshots do README foram gerados com Playwright a partir do Markdown genérico em `.app/examples/apollo-11.md`.
 
 ```powershell
+cd .app
 npm install
 npm run screenshots
+cd ..
 ```
 
 ## Estrutura
 
 ```text
-md-studio.html          Aplicação completa
-examples/apollo-11.md  Markdown genérico usado nos screenshots
-screenshots/           Imagens usadas neste README
-scripts/               Script opcional para regenerar screenshots
+README.md       Documentação pública
+md-studio.html  Aplicação completa
+.app/           Arquivos auxiliares ocultos, como screenshots, exemplo e script de captura
 ```
