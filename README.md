@@ -39,9 +39,8 @@ O botão de edição abre o documento em modo visual, permitindo alterar o conte
 
 ## Dependências
 
-O app não tem etapa de build ou servidor para uso normal. As bibliotecas de renderização são carregadas por CDN quando o HTML é aberto:
+O app não tem etapa de build ou servidor para uso normal. As bibliotecas de renderização ficam embutidas no próprio `md-studio.html`, então a visualização funciona offline após baixar o repositório.
 
-- Google Fonts
 - marked
 - highlight.js
 - Mermaid
@@ -49,4 +48,3 @@ O app não tem etapa de build ou servidor para uso normal. As bibliotecas de ren
 - Turndown
 - turndown-plugin-gfm
 
-Por isso, a experiência completa depende de acesso à internet.

@@ -18,6 +18,14 @@ async function main() {
     viewport: { width: 1440, height: 980 },
     deviceScaleFactor: 1,
   });
+  await page.route('**/*', (route) => {
+    const requestUrl = route.request().url();
+    if (/^(file|data|blob):/i.test(requestUrl)) {
+      route.continue();
+      return;
+    }
+    route.abort();
+  });
 
   await page.goto(url, { waitUntil: 'networkidle', timeout: 90000 });
   await page.addStyleTag({ content: '.footer-credit{display:none!important}' });
