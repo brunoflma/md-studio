@@ -1,8 +1,8 @@
 # MD Studio
 
-MD Studio e um visualizador e editor de Markdown em arquivo HTML unico. Ele foi feito para abrir documentos `.md` no navegador com uma leitura mais agradavel, mantendo tambem modos de edicao inline e edicao do codigo-fonte Markdown.
+MD Studio é um visualizador e editor de Markdown em arquivo HTML único. Ele foi feito para abrir documentos `.md` no navegador com uma leitura mais agradável, mantendo também modos de edição inline e edição do código-fonte Markdown.
 
-![Visualizacao de um Markdown no MD Studio](screenshots/preview.png)
+![Visualização de um Markdown no MD Studio](screenshots/preview.png)
 
 ## Como usar
 
@@ -14,36 +14,36 @@ No PowerShell:
 Invoke-Item .\md-studio.html
 ```
 
-Tambem e possivel arrastar um arquivo Markdown para a tela inicial, usar o botao **ABRIR ARQUIVO** ou pressionar `Ctrl+O`.
+Também é possível arrastar um arquivo Markdown para a tela inicial, usar o botão **ABRIR ARQUIVO** ou pressionar `Ctrl+O`.
 
 ## Recursos
 
 - Abertura de arquivos `.md`, `.markdown`, `.mdown`, `.mkd` e `.txt`.
 - Modo **Preview** para leitura formatada.
-- Modo de edicao inline diretamente sobre o documento renderizado.
-- Modo de edicao do codigo-fonte Markdown.
+- Modo de edição inline diretamente sobre o documento renderizado.
+- Modo de edição do código-fonte Markdown.
 - Atalhos `Ctrl+O`, `Ctrl+E`, `Ctrl+U` e `Ctrl+S`.
-- Renderizacao de tabelas, listas, blocos de codigo e alertas no estilo GitHub.
+- Renderização de tabelas, listas, blocos de código e alertas no estilo GitHub.
 - Destaque de sintaxe com highlight.js.
 - Diagramas Mermaid em blocos `mermaid`.
-- Expressoes matematicas com KaTeX.
-- Botao para copiar blocos de codigo.
-- Copia do conteudo Markdown completo para a area de transferencia.
+- Expressões matemáticas com KaTeX.
+- Botão para copiar blocos de código.
+- Cópia do conteúdo Markdown completo para a área de transferência.
 - Salvamento pelo File System Access API quando o navegador suporta esse recurso; em outros casos, o app usa download do arquivo.
 
-## Edicao
+## Edição
 
-O botao de edicao abre o documento em modo visual, permitindo alterar o conteudo renderizado. O botao de codigo-fonte alterna para um editor de texto com o Markdown original.
+O botão de edição abre o documento em modo visual, permitindo alterar o conteúdo renderizado. O botão de código-fonte alterna para um editor de texto com o Markdown original.
 
-![Edicao de Markdown no MD Studio](screenshots/editor.png)
+![Edição de Markdown no MD Studio](screenshots/editor.png)
 
-## Exemplo seguro para demonstracao
+## Exemplo seguro para demonstração
 
-O arquivo `examples/apollo-11.md` contem um Markdown generico sobre a missao Apollo 11. Ele foi criado para gerar os screenshots deste README sem expor dados pessoais, documentos internos ou informacoes sensiveis.
+O arquivo `examples/apollo-11.md` contém um Markdown genérico sobre a missão Apollo 11. Ele foi criado para gerar os screenshots deste README sem expor dados pessoais, documentos internos ou informações sensíveis.
 
-## Dependencias
+## Dependências
 
-O app nao tem etapa de build ou servidor para uso normal. As bibliotecas de renderizacao sao carregadas por CDN quando o HTML e aberto:
+O app não tem etapa de build ou servidor para uso normal. As bibliotecas de renderização são carregadas por CDN quando o HTML é aberto:
 
 - Google Fonts
 - marked
@@ -53,11 +53,11 @@ O app nao tem etapa de build ou servidor para uso normal. As bibliotecas de rend
 - Turndown
 - turndown-plugin-gfm
 
-Por isso, a experiencia completa depende de acesso a internet, a menos que essas dependencias sejam vendorizadas no futuro.
+Por isso, a experiência completa depende de acesso à internet, a menos que essas dependências sejam vendorizadas no futuro.
 
 ## Regenerar screenshots
 
-Os screenshots do README foram gerados com Playwright a partir do Markdown generico em `examples/apollo-11.md`.
+Os screenshots do README foram gerados com Playwright a partir do Markdown genérico em `examples/apollo-11.md`.
 
 ```powershell
 npm install
@@ -67,8 +67,8 @@ npm run screenshots
 ## Estrutura
 
 ```text
-md-studio.html          Aplicacao completa
-examples/apollo-11.md  Markdown generico usado nos screenshots
+md-studio.html          Aplicação completa
+examples/apollo-11.md  Markdown genérico usado nos screenshots
 screenshots/           Imagens usadas neste README
 scripts/               Script opcional para regenerar screenshots
 ```
