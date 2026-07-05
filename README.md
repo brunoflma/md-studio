@@ -37,10 +37,6 @@ O botão de edição abre o documento em modo visual, permitindo alterar o conte
 
 ![Edição de Markdown no MD Studio](.app/screenshots/editor.png)
 
-## Exemplo seguro para demonstração
-
-O arquivo `.app/examples/apollo-11.md` contém um Markdown genérico sobre a missão Apollo 11. Ele foi criado para gerar os screenshots deste README sem expor dados pessoais, documentos internos ou informações sensíveis.
-
 ## Dependências
 
 O app não tem etapa de build ou servidor para uso normal. As bibliotecas de renderização são carregadas por CDN quando o HTML é aberto:
@@ -53,23 +49,4 @@ O app não tem etapa de build ou servidor para uso normal. As bibliotecas de ren
 - Turndown
 - turndown-plugin-gfm
 
-Por isso, a experiência completa depende de acesso à internet, a menos que essas dependências sejam vendorizadas no futuro.
-
-## Regenerar screenshots
-
-Os screenshots do README foram gerados com Playwright a partir do Markdown genérico em `.app/examples/apollo-11.md`.
-
-```powershell
-cd .app
-npm install
-npm run screenshots
-cd ..
-```
-
-## Estrutura
-
-```text
-README.md       Documentação pública
-md-studio.html  Aplicação completa
-.app/           Arquivos auxiliares ocultos, como screenshots, exemplo e script de captura
-```
+Por isso, a experiência completa depende de acesso à internet.
