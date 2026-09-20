@@ -1,50 +1,69 @@
+<img src="docs/cover.svg" width="100%" alt="MD Studio. Leia, edite e compartilhe Markdown com clareza.">
+
 # MD Studio
 
-MD Studio é um visualizador e editor de Markdown em arquivo HTML único. Ele foi feito para abrir documentos `.md` no navegador com uma leitura mais agradável, mantendo também modos de edição inline e edição do código-fonte Markdown.
+**Um arquivo HTML. Três formas de trabalhar com Markdown.**
 
-![Visualização de um Markdown no MD Studio](.app/screenshots/preview.png)
+Abra seus documentos no navegador, leia uma versão formatada, faça ajustes no próprio texto ou edite o código Markdown. O MD Studio reúne essas tarefas em um arquivo que pode ser usado offline depois de baixado.
 
-## Como usar
+**[Baixar o projeto ↗](https://github.com/brunoflma/md-studio/archive/refs/heads/main.zip)** · [Arquivo do aplicativo](md-studio.html) · [Problemas e sugestões](https://github.com/brunoflma/md-studio/issues)
 
-Abra o arquivo `md-studio.html` diretamente no navegador.
+![Leitura de um documento no MD Studio](.app/screenshots/preview.png)
 
-No PowerShell:
+## Abra e comece
+
+1. Baixe o ZIP do projeto e extraia os arquivos.
+2. Abra **`md-studio.html`** no navegador.
+3. Arraste um documento para a tela, clique em **ABRIR ARQUIVO** ou use `Ctrl+O`.
+
+No Windows, também é possível abrir pelo PowerShell:
 
 ```powershell
 Invoke-Item .\md-studio.html
 ```
 
-Também é possível arrastar um arquivo Markdown para a tela inicial, usar o botão **ABRIR ARQUIVO** ou pressionar `Ctrl+O`.
+## Escolha como trabalhar
 
-## Recursos
+| Modo | Para usar quando |
+| :--- | :--- |
+| **Preview** | Você quer ler um relatório, uma documentação ou uma nota sem o ruído da marcação. |
+| **Edição visual** | Você quer ajustar o conteúdo diretamente no documento renderizado. |
+| **Código-fonte** | Você precisa controlar a estrutura e a sintaxe do Markdown. |
 
-- Abertura de arquivos `.md`, `.markdown`, `.mdown`, `.mkd` e `.txt`.
-- Modo **Preview** para leitura formatada.
-- Modo de edição inline diretamente sobre o documento renderizado.
-- Modo de edição do código-fonte Markdown.
-- Atalhos `Ctrl+O`, `Ctrl+E`, `Ctrl+U` e `Ctrl+S`.
-- Renderização de tabelas, listas, blocos de código e alertas no estilo GitHub.
-- Destaque de sintaxe com highlight.js.
-- Diagramas Mermaid em blocos `mermaid`.
-- Expressões matemáticas com KaTeX.
-- Botão para copiar blocos de código.
-- Cópia do conteúdo Markdown completo para a área de transferência.
-- Salvamento pelo File System Access API quando o navegador suporta esse recurso; em outros casos, o app usa download do arquivo.
+### O que o visualizador entende
 
-## Edição
+- Tabelas, listas e alertas no estilo GitHub.
+- Blocos de código com destaque de sintaxe e botão de copiar.
+- Diagramas escritos em Mermaid.
+- Expressões matemáticas renderizadas com KaTeX.
+- Arquivos `.md`, `.markdown`, `.mdown`, `.mkd` e `.txt`.
 
-O botão de edição abre o documento em modo visual, permitindo alterar o conteúdo renderizado. O botão de código-fonte alterna para um editor de texto com o Markdown original.
+## Atalhos e salvamento
 
-![Edição de Markdown no MD Studio](.app/screenshots/editor.png)
+| Atalho | Ação |
+| :--- | :--- |
+| `Ctrl+O` | Abrir documento |
+| `Ctrl+E` | Alternar a edição visual |
+| `Ctrl+U` | Alternar o código-fonte |
+| `Ctrl+S` | Salvar |
 
-## Dependências
+Nos navegadores compatíveis, o salvamento utiliza a File System Access API. Nos demais, o aplicativo baixa um arquivo com o conteúdo. Também é possível copiar todo o Markdown para a área de transferência.
 
-O app não tem etapa de build ou servidor para uso normal. As bibliotecas de renderização ficam embutidas no próprio `md-studio.html`, então a visualização funciona offline após baixar o repositório.
+<details>
+<summary><strong>Veja o modo de edição</strong></summary>
 
-- marked
-- highlight.js
-- Mermaid
-- KaTeX
-- Turndown
-- turndown-plugin-gfm
+![Edição visual e de código no MD Studio](.app/screenshots/editor.png)
 
+</details>
+
+## Um aplicativo que cabe em um arquivo
+
+O uso normal não exige build, servidor ou instalação de dependências. As bibliotecas já estão embutidas em `md-studio.html`.
+
+Para desenvolvimento, o repositório mantém ferramentas auxiliares em [.app](.app). O aplicativo utiliza marked, highlight.js, Mermaid, KaTeX, Turndown e turndown-plugin-gfm.
+
+## Contribua
+
+Encontrou um Markdown que não renderiza como esperado? Abra uma [issue](https://github.com/brunoflma/md-studio/issues) com um exemplo mínimo e informe o navegador utilizado. Remova informações pessoais ou de clientes antes de compartilhar o documento.
+
+Desenvolvido por [Bruno Ferreira](https://github.com/brunoflma). Veja também as [outras ferramentas do portfólio](https://github.com/brunoflma?tab=repositories).
