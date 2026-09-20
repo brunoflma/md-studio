@@ -5,12 +5,22 @@ const appRoot = path.resolve(__dirname, '..');
 const projectRoot = path.resolve(appRoot, '..');
 const htmlPath = path.join(projectRoot, 'md-studio.html');
 
+function resolveNodeModulesPath(...parts) {
+  const nodeModulesRoot = path.join(appRoot, 'node_modules');
+  const targetPath = path.resolve(nodeModulesRoot, ...parts);
+  const relative = path.relative(nodeModulesRoot, targetPath);
+  if (relative.startsWith('..') || path.isAbsolute(relative)) {
+    throw new Error(`Path traversal detected outside node_modules: ${targetPath}`);
+  }
+  return targetPath;
+}
+
 function readText(...parts) {
-  return fs.readFileSync(path.join(appRoot, 'node_modules', ...parts), 'utf8');
+  return fs.readFileSync(resolveNodeModulesPath(...parts), 'utf8');
 }
 
 function readBinary(...parts) {
-  return fs.readFileSync(path.join(appRoot, 'node_modules', ...parts));
+  return fs.readFileSync(resolveNodeModulesPath(...parts));
 }
 
 function fontMime(filename) {
