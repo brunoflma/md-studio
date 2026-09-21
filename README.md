@@ -1,12 +1,14 @@
-<img src="docs/cover.svg" width="100%" alt="MD Studio. Leia, edite e compartilhe Markdown com clareza.">
+<img src="docs/cover.svg" width="100%" alt="MD Studio. Seu Markdown, pronto para ser lido.">
 
 # MD Studio
 
-**Um arquivo HTML. Três formas de trabalhar com Markdown.**
+**Seu Markdown, pronto para ser lido. Um HTML, três modos de trabalho.**
 
 Abra seus documentos no navegador, leia uma versão formatada, faça ajustes no próprio texto ou edite o código Markdown. O MD Studio reúne essas tarefas em um arquivo que pode ser usado offline depois de baixado.
 
-**[Baixar o projeto ↗](https://github.com/brunoflma/md-studio/archive/refs/heads/main.zip)** · [Arquivo do aplicativo](md-studio.html) · [Problemas e sugestões](https://github.com/brunoflma/md-studio/issues)
+**[Conheça a página do MD Studio ↗](https://brunoflma.github.io/md-studio/)** · [Baixar o projeto](https://github.com/brunoflma/md-studio/archive/refs/heads/main.zip) · [Arquivo do aplicativo](md-studio.html) · [Compartilhar experiência](https://github.com/brunoflma/md-studio/issues/new?template=experiencia.yml)
+
+Se o MD Studio for útil, use **Star** no topo do repositório para salvá-lo e demonstrar apoio. A estrela é opcional; o download está disponível para você experimentar e avaliar.
 
 ![Leitura de um documento no MD Studio](.app/screenshots/preview.png)
 
@@ -15,6 +17,8 @@ Abra seus documentos no navegador, leia uma versão formatada, faça ajustes no 
 1. Baixe o ZIP do projeto e extraia os arquivos.
 2. Abra **`md-studio.html`** no navegador.
 3. Arraste um documento para a tela, clique em **ABRIR ARQUIVO** ou use `Ctrl+O`.
+
+Quer testar com um documento pronto? [Baixe o exemplo de notas de pesquisa](docs/examples/notas-de-pesquisa.md) ou [explore os modos e o prompt para seu agente de IA](https://brunoflma.github.io/md-studio/#comecar).
 
 No Windows, também é possível abrir pelo PowerShell:
 
@@ -49,6 +53,8 @@ Invoke-Item .\md-studio.html
 
 Nos navegadores compatíveis, o salvamento utiliza a File System Access API. Nos demais, o aplicativo baixa um arquivo com o conteúdo. Também é possível copiar todo o Markdown para a área de transferência.
 
+A edição visual converte o conteúdo renderizado de volta para Markdown, e a representação pode mudar. Para controlar uma sintaxe específica, use **Código-fonte** e confira o arquivo salvo. Não conte com salvamento automático.
+
 <details>
 <summary><strong>Veja o modo de edição</strong></summary>
 
@@ -60,7 +66,11 @@ Nos navegadores compatíveis, o salvamento utiliza a File System Access API. Nos
 
 O uso normal não exige build, servidor ou instalação de dependências. As bibliotecas já estão embutidas em `md-studio.html`.
 
+Imagens e outros recursos externos referenciados no próprio documento podem precisar de internet.
+
 Para desenvolvimento, o repositório mantém ferramentas auxiliares em [.app](.app). O aplicativo utiliza marked, highlight.js, Mermaid, KaTeX, Turndown e turndown-plugin-gfm.
+
+A apresentação publicada no GitHub Pages fica em [docs](docs). Para conferir seus links, exemplos, capturas e identidade visual, execute `node .app/scripts/verify-site.cjs` na raiz do projeto. Isso não exige instalar dependências.
 
 ## Contribua
 

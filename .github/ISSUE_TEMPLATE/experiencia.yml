@@ -1,0 +1,35 @@
+name: Conte sua experiência
+description: Compartilhe uma sugestão ou uma dificuldade ao usar o MD Studio.
+title: "[Experiência] "
+body:
+  - type: markdown
+    attributes:
+      value: "Obrigado por experimentar o MD Studio. Use exemplos sem dados pessoais ou informações de clientes."
+  - type: dropdown
+    id: experience
+    attributes:
+      label: O que você quer compartilhar?
+      options:
+        - Uma sugestão de melhoria
+        - Uma dificuldade ou erro
+        - Como usei o MD Studio
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Navegador e sistema operacional
+      placeholder: "Ex.: Chrome no Windows"
+  - type: textarea
+    id: details
+    attributes:
+      label: Conte o que aconteceu
+      description: "Se houve um problema, descreva os passos, o resultado esperado e o que ocorreu."
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Exemplo mínimo de Markdown, se necessário
+      description: "Remova informações pessoais ou de clientes."
+      render: markdown

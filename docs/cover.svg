@@ -1,15 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="256" viewBox="0 0 1200 256" fill="none" role="img" aria-labelledby="title desc">
-<title id="title">MD Studio</title><desc id="desc">Leia, edite e salve Markdown no navegador.</desc>
-<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#29404C"/></pattern><linearGradient id="edge" x2="1200" y2="256" gradientUnits="userSpaceOnUse"><stop stop-color="#A9BFFF"/><stop offset=".6" stop-color="#263C48"/><stop offset="1" stop-color="#A9BFFF"/></linearGradient></defs>
-<rect x=".75" y=".75" width="1198.5" height="254.5" rx="17" fill="#0B121A" stroke="url(#edge)" stroke-width="1.5"/>
-<path d="M900 1H1182Q1199 1 1199 18V238Q1199 255 1182 255H900Z" fill="url(#grid)" opacity=".45"/>
-<path d="M39 43H63" stroke="#A9BFFF" stroke-width="3"/>
-<text x="77" y="48" fill="#A9BFFF" font-family="Consolas,monospace" font-size="14" letter-spacing="1.8">DOCUMENTOS / FERRAMENTA LOCAL</text>
-<text x="36" y="132" fill="#F0F6FC" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-weight="750" font-size="65" letter-spacing="-2">MD Studio<tspan fill="#A9BFFF">.</tspan></text>
-<text x="40" y="177" fill="#B8C9D5" font-family="'Segoe UI',sans-serif" font-size="25">Leia, edite e salve Markdown no navegador.</text>
-<text x="40" y="224" fill="#859DAD" font-family="Consolas,monospace" font-size="13" letter-spacing="2">BRUNO FERREIRA / BRUNOFLMA</text>
-<circle cx="1050" cy="127" r="89" stroke="#315361" stroke-dasharray="3 8"/><circle cx="1050" cy="127" r="66" stroke="#A9BFFF" stroke-opacity=".45"/>
-<rect x="1005" y="82" width="90" height="90" rx="19" fill="#10222B" stroke="#A9BFFF"/>
-<text x="1050" y="143" text-anchor="middle" fill="#A9BFFF" font-family="Consolas,monospace" font-weight="bold" font-size="37">MD</text>
-<circle cx="984" cy="93" r="4" fill="#A9BFFF"/><circle cx="1120" cy="177" r="4" fill="#A9BFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">MD Studio</title><desc id="desc">Seu Markdown, pronto para ser lido. Um arquivo HTML, três modos de trabalho.</desc>
+<rect width="1200" height="280" fill="#0A1224"/><rect x="12" y="12" width="1176" height="256" fill="none" stroke="#C8A862" stroke-opacity=".5"/><rect x="22" y="22" width="1156" height="236" fill="none" stroke="#344058"/>
+<path d="m54 44 6 6-6 6-6-6z" fill="#C8A862"/><text x="76" y="55" fill="#C8A862" font-family="Consolas,monospace" font-size="13" letter-spacing="3">LEITURA · EDIÇÃO · MARKDOWN</text>
+<text x="47" y="136" fill="#F4F1E9" font-family="Georgia,serif" font-size="67">MD Studio</text>
+<text x="50" y="183" fill="#D9C08A" font-family="Georgia,serif" font-style="italic" font-size="30">Seu Markdown, pronto para ser lido.</text>
+<text x="51" y="229" fill="#8E9ABA" font-family="Consolas,monospace" font-size="12" letter-spacing="1">UM ARQUIVO HTML / TRÊS MODOS DE TRABALHO</text>
+<rect x="835" y="49" width="307" height="181" fill="#0E1A33" stroke="#C8A862" stroke-opacity=".5"/><rect x="845" y="59" width="287" height="161" fill="none" stroke="#344058"/>
+<text x="862" y="89" fill="#C8A862" font-family="Consolas,monospace" font-size="11" letter-spacing="1.5">O DOCUMENTO NO CENTRO</text>
+<text x="862" y="138" fill="#F4F1E9" font-family="Georgia,serif" font-size="29">Leia. Edite. Salve.</text>
+<path d="M862 160h252" stroke="#344058"/>
+<text x="862" y="192" fill="#8E9ABA" font-family="Consolas,monospace" font-size="11">PREVIEW / VISUAL / FONTE</text>
 </svg>
